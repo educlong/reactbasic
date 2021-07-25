@@ -14,12 +14,12 @@ class BlogPostDemo2 extends Component {
                         if(aDataNews.id === parseInt(this.props.match.params.id)){/*lấy id của từng phần tử ra,so sánh*/
                             console.log(aDataNews);/**vs id đc truyền vào tại RouterDemo2.js. Nếu đúng thì in ra*/
                             return(
-                                <section className="py-5">
+                                <section className="py-5" key={key}>
                                     <div className="container px-5 my-5">
                                         <div className="row gx-5">
                                             <Author avatarAuthor={aDataNews.imgAuthor}
                                                     nameAuthor ={aDataNews.author}
-                                                    positionAuthor={aDataNews.position} key={key}/>
+                                                    positionAuthor={aDataNews.position}/>
                                             <Content dataContent={aDataNews}/>{/**truyền toàn bộ data của 1 phần tử qua*/}
                                         </div>{/*và tại component Content nhận đc thông qua props, từ props lấy ra info*/}
                                     </div>

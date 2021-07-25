@@ -11,3 +11,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.alert-dismissable.alert-info.alert-0-2-18.alert svg path {
+  transform: scale(0.04);
+}

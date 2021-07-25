@@ -12,6 +12,10 @@ import RouterDemo2 from './modernBusinessDemo2/RouterDemo2';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import Alerts from './Alerts';
+
+
+
 
 /**Các cách tạo 1 component và props*/
 function Component1(props){     /*** Cách 1: chỉ đc sử dụng 1 thẻ html ở đây */
@@ -134,11 +138,13 @@ function App() {
         <main className="flex-shrink-0">
           <Router>    {/**định nghĩa 1 Router, để điều hướng mà k load lại webpage -> cần import router vào  */}
             <Navigation2/>  {/**trong Navigation2 có sử dụng NavLink nên Router cần phải bọc luôn cả Navigation2*/}
+            <Alerts/> {/**hiển thị alert cho phép thông báo trong App */}
             <RouterDemo2/>  {/**trước khi điều hướng router thì cần đọc readme để cài đặt router trước */}
           </Router>   {/**tiếp theo xử lý VD về truyền data, xử lý tại index\SectionBlogs.js và  blogs\home\SectionBlog.js */}
         </main>
         <Footer2/>
       </div>
+
     </div>
   );
 }

@@ -21,17 +21,17 @@ class Navigation extends Component {
                             </ul>
                         </li>
                         <li className="nav-item"><NavLink to="/demo2/contact" className="nav-link">Contact</NavLink></li>
-                        <li className="nav-item"><NavLink to="/demo2/about" className="nav-link">About</NavLink></li>
-                        <li className="nav-item"><NavLink to="/demo2/pricing" className="nav-link">Pricing</NavLink></li>
-                        <li className="nav-item"><NavLink to="/demo2/fqa" className="nav-link">FQA</NavLink></li>
+                        <li className="nav-item"><NavLink to="/demo2/admin" className="nav-link">Admin</NavLink></li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                            <a className="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio Redux</a>
                             <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
                                 <li><NavLink to="/demo2/portfolio-overview" className="dropdown-item">Portfolio Overview</NavLink></li>
                                 <li><NavLink to="/demo2/portfolio-items" className="dropdown-item">Portfolio Items</NavLink></li>
                             </ul>
                         </li>
-                        <li className="nav-item"><NavLink to="/demo2/admin" className="nav-link">Admin</NavLink></li>
+                        <li className="nav-item"><NavLink to="/demo2/fqa" className="nav-link">FQA Connect to Nodejs</NavLink></li>
+                        <li className="nav-item"><NavLink to="/demo2/about" className="nav-link">About</NavLink></li>
+                        <li className="nav-item"><NavLink to="/demo2/pricing" className="nav-link">Pricing</NavLink></li>
                     </ul>
                     </div>
                 </div>

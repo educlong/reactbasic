@@ -11,10 +11,10 @@ import AdminUser from './admin/AdminUser';
 import BlogHomeDemo2 from './blogs/home/BlogHomeDemo2';
 import BlogPostDemo2 from './blogs/post/BlogPostDemo2';
 import ContactDemo2 from './contact/ContactDemo2';
-import FQADemo2 from './fqa/FQADemo2';
+import FQADemo2 from '../qaConnectToNodejs/FQADemo2';
 import HomeDemo2 from './index/HomeDemo2';
-import PortfolioItems from './portfolio/items/PortfolioItems';
-import PortfolioOverview from './portfolio/overview/PortfolioOverview';
+import PortfolioItems from '../portfolioReduxjsBasic/items/PortfolioItems';
+import PortfolioOverview from '../portfolioReduxjsBasic/overview/PortfolioOverview';
 import PricingDemo2 from './pricing/PricingDemo2';
 
 class RouterDemo2 extends Component {
