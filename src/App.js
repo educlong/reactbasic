@@ -1,19 +1,6 @@
 import React, {Component} from 'react'; /**nguyên lý để tạo component là cần phải import lib react component từ (from) react */
 import logo from './logo.svg';
 import './App.css';
-import Navigation1 from './componentOnepageDemo1/Navigation';
-import Header from './componentOnepageDemo1/Header';
-import Secion from './componentOnepageDemo1/Secion';
-import Footer1 from './componentOnepageDemo1/Footer';
-
-import Navigation2 from './modernBusinessDemo2/Navigation';
-import Footer2 from './modernBusinessDemo2/Footer';
-import RouterDemo2 from './modernBusinessDemo2/RouterDemo2';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
-import Alerts from './Alerts';
-
 
 
 
@@ -110,40 +97,6 @@ function App() {
         </div>
       </div>
 
-
-
-
-
-
-      {/**Project 1: One page Demo 1 */}
-
-      <div className="onePageDemo1">
-        <hr/> <h3>Project 1: One page Demo 1</h3>
-        <Navigation1/> {/**Link file NavigationHeader.js vào App (tự động import -> lướt lên trên cùng để xem)*/}
-        <Header/>     {/**Link file Secion.js vào App (chú ý link các props cho component Secion)*/}
-        <Secion imgSectionDemo1="/onePageDemo1/assets/img/01.jpg" orderImg="order-lg-2" orderText="order-lg-1" titleSectionDemo1="Paul Long"/>
-        <Secion imgSectionDemo1="/onePageDemo1/assets/img/02.jpg" orderImg="order-lg-1" orderText="order-lg-2" titleSectionDemo1="Nguyen Duc Long"/>
-        <Secion imgSectionDemo1="/onePageDemo1/assets/img/03.jpg" orderImg="order-lg-2" orderText="order-lg-1" titleSectionDemo1="educlong"/>
-        <Footer1/>
-      </div>
-
-
-
-
-
-
-      {/**Project 2 */}
-      <div className="d-flex flex-column h-100">
-        <hr/> <h3>Project 2: Modern Business Demo 2</h3>
-        <main className="flex-shrink-0">
-          <Router>    {/**định nghĩa 1 Router, để điều hướng mà k load lại webpage -> cần import router vào  */}
-            <Navigation2/>  {/**trong Navigation2 có sử dụng NavLink nên Router cần phải bọc luôn cả Navigation2*/}
-            <Alerts/> {/**hiển thị alert cho phép thông báo trong App */}
-            <RouterDemo2/>  {/**trước khi điều hướng router thì cần đọc readme để cài đặt router trước */}
-          </Router>   {/**tiếp theo xử lý VD về truyền data, xử lý tại index\SectionBlogs.js và  blogs\home\SectionBlog.js */}
-        </main>
-        <Footer2/>
-      </div>
 
     </div>
   );
