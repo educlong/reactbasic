@@ -116,8 +116,8 @@
     Bước 9: thêm, sửa, xóa data từ firebase: toàn bộ data trong firebase đc lưu trong 1 khái niệm đgl datasnapshot
         -> lấy data và update data trong FirebaseConfig.js
         -> insert, delete data trong file ProjectUpdate.js
-    Bước 10: Tạo Store lưu trữ firebase trong portfolioReduxjsBasic\overview\StoreFirebase.js
-        và import store này vào portfolioReduxjsBasic\Store.js
+    Bước 10: Tạo Store lưu trữ firebase trong Store/StoreFirebase.js
+        và import store này vào Store\Store.js
 
     _____MODULE NOTIFIER hiển thị thông báo trong redux
     Bước 11: Cài thêm plugin Notifier để hiển thị thông báo, gõ: npm install react-bs-notifier --save
