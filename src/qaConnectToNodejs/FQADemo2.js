@@ -28,12 +28,8 @@ class FQADemo2 extends Component {
     
     render() {  /**ban đầu flag=false nên k query lên server lấy data. Khi nhấn vào "Submit Postgresql"*/
         if(this.state.flag){    /**thì thay đổi trạng thái của flag từ false->true để query lên server*/
-            this.props.countUserFQA.then((res)=>{
-                for (let index = 0; index < res; index++){
-                    this.selectFqaDb() /**query lên server để lấy data */
-                    // console.log("res1");
-                }
-            })
+            this.selectFqaDb(); /**query lên server để lấy data */
+            this.selectFqaDb(); /**query lên server để lấy data */
         }
         return (
             <section className="py-5 container">
@@ -75,14 +71,10 @@ class FQADemo2 extends Component {
 const mapStateToProps = (state, ownProps) => {
     return {
         usersFQA: state.fQAReducer.usersFQA,
-        countUserFQA: state.fQAReducer.countUserFQA,
     }
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        countFQA: () => {
-            dispatch({type:"COUNT_DATA_ALL_USER"})
-        },
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(FQADemo2)

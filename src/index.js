@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux"
 import App from './App';
-import store1 from "./Store/Store.js"  /**Chú ý import store1 vào */
+import store1 from "./portfolioReduxjsBasic/Store.js"  /**Chú ý import store1 vào */
 
 /**Bước 3: tại index.js sẽ nhận store (Bước 1 tại reduxjsBasix/Store.js; Bước 2 tại reduxjsBasix/IndexRedux.js*/
 ReactDOM.render( /**thay vì render ra App thì render ra provider và bao trong là App */

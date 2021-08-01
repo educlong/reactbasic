@@ -98,13 +98,13 @@
     __________REDUX JS ________________
     Bước 1: cài đặt redux, gõ: npm install redux --save -> enter
     Bước 2: Cài đặt module react-redux, gõ: npm install react-redux -> enter
-    Bước 3: zải thích các khái niệm: store, reducer, action trong Store/Store.js.
+    Bước 3: zải thích các khái niệm: store, reducer, action trong portfolioReduxjsBasic/Store.js.
     Bước 4: Trích xuất dữ liệu trong Store ra component đc zải thích qua 4 bước 
-        trong 3 file Store/Store.js, portfolioReduxjsBasic/IndexRedux.js và index.js
-        (Có thể truyền tham số vào dispatch để gửi lên store xử lý -> file portfolioReduxjsBasic\overview\ProjectUpdate.js, xem tại FIREBASE)
+        trong 3 file portfolioReduxjsBasic/Store.js, portfolioReduxjsBasic/IndexRedux.js và index.js
+        (Có thể truyền tham số vào dispatch để gửi lên store xử lý -> file portfolioReduxjsBasic\overview\ProjectUpdate.js)
     
         VD về 1 project REDUX JS -> file portfolioReduxjsBasic\overview\PortfolioOverview.js
-        Để dễ theo dõi về store, xem ví dụ về Alerts.js (chi tiết để tạo Alert tại phần dưới - phần FIREBASE)
+        Để dễ theo dõi về store, xem ví dụ về Alerts.js, 
     
     ________FIREBASE________________
     Bước 5: Sử dụng firebase để tạo database cho PortfolioOverview.js 
@@ -116,8 +116,8 @@
     Bước 9: thêm, sửa, xóa data từ firebase: toàn bộ data trong firebase đc lưu trong 1 khái niệm đgl datasnapshot
         -> lấy data và update data trong FirebaseConfig.js
         -> insert, delete data trong file ProjectUpdate.js
-    Bước 10: Tạo Store lưu trữ firebase trong Store/StoreFirebase.js
-        và import store này vào Store\Store.js
+    Bước 10: Tạo Store lưu trữ firebase trong portfolioReduxjsBasic\overview\StoreFirebase.js
+        và import store này vào portfolioReduxjsBasic\Store.js
 
     _____MODULE NOTIFIER hiển thị thông báo trong redux
     Bước 11: Cài thêm plugin Notifier để hiển thị thông báo, gõ: npm install react-bs-notifier --save
