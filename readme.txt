@@ -98,13 +98,13 @@
     __________REDUX JS ________________
     Bước 1: cài đặt redux, gõ: npm install redux --save -> enter
     Bước 2: Cài đặt module react-redux, gõ: npm install react-redux -> enter
-    Bước 3: zải thích các khái niệm: store, reducer, action trong portfolioReduxjsBasic/Store.js.
+    Bước 3: zải thích các khái niệm: store, reducer, action trong Store/Store.js.
     Bước 4: Trích xuất dữ liệu trong Store ra component đc zải thích qua 4 bước 
-        trong 3 file portfolioReduxjsBasic/Store.js, portfolioReduxjsBasic/IndexRedux.js và index.js
-        (Có thể truyền tham số vào dispatch để gửi lên store xử lý -> file portfolioReduxjsBasic\overview\ProjectUpdate.js)
+        trong 3 file Store/Store.js, portfolioReduxjsBasic/IndexRedux.js và index.js
+        (Có thể truyền tham số vào dispatch để gửi lên store xử lý -> file portfolioReduxjsBasic\overview\ProjectUpdate.js, xem tại FIREBASE)
     
         VD về 1 project REDUX JS -> file portfolioReduxjsBasic\overview\PortfolioOverview.js
-        Để dễ theo dõi về store, xem ví dụ về Alerts.js, 
+        Để dễ theo dõi về store, xem ví dụ về Alerts.js (chi tiết để tạo Alert tại phần dưới - phần FIREBASE)
     
     ________FIREBASE________________
     Bước 5: Sử dụng firebase để tạo database cho PortfolioOverview.js 
