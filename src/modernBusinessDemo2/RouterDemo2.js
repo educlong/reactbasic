@@ -6,7 +6,7 @@ import {
     Route
 } from "react-router-dom";
 
-import PortfolioOverview from '../portfolioReduxjsBasic/overview/PortfolioOverview';
+import FQADemo2 from '../qaConnectToNodejs/FQADemo2';
 
 class RouterDemo2 extends Component {
     render() {
@@ -20,8 +20,8 @@ class RouterDemo2 extends Component {
                 of them to render at a time
                 */}
                 <Switch>    {/**route đến các page cần thiết */}
-                    <Route path="/demo2/portfolio-overview"> <PortfolioOverview /> </Route>
-                    <Route path="/"> <PortfolioOverview /> </Route>
+                    <Route path="/demo2/fqa"> <FQADemo2 /> </Route>
+                    <Route path="/"> <FQADemo2 /> </Route>
                 </Switch>
             </div>  /**cuối cùng thì truyền RouterDemo2 này vào App.js */
         );

@@ -11,12 +11,8 @@ class Navigation extends Component {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon" /></button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio Redux</a>
-                            <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                <li><NavLink to="/demo2/portfolio-overview" className="dropdown-item">Portfolio Overview</NavLink></li>
-                            </ul>
-                        </li>
+                       
+                        <li className="nav-item"><NavLink to="/demo2/fqa" className="nav-link">FQA Connect to Nodejs</NavLink></li>
                     </ul>
                     </div>
                 </div>
